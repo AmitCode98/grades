@@ -13,14 +13,14 @@ export default function hero() {
         alt="hero background image"
         src={HeroBgImg}
         // className='h-screen w-full object-cover bg-cover bg-no-repeat object-center -z-10'
-        className=" w-full h-full object-cover bg-cover bg-no-repeat object-center -z-10"
+        className=" md:w-full md:h-full h-4/6 w-fit object-cover bg-cover bg-no-repeat object-center -z-10"
         loading="lazy"
       />
 
-      <div className="absolute w-[50%] h-full top-0 left-1/2 transform -translate-x-1/2">
+      <div className="absolute w-[50%] h-full md:top-0 left-1/2 transform -translate-x-1/2">
         <div className="flex flex-col h-full justify-center items-center text-center">
           <div className="relative">
-            <p className="font-mousememoirs font-normal text-2xl text-primary">
+            <p className="font-mousememoirs font-normal md:text-2xl text-primary">
               Learn. Earn. Collect. Achieve...
             </p>
             <Image
@@ -30,7 +30,7 @@ export default function hero() {
             />
           </div>
           <div className="relative">
-            <h1 className="font-normal text-[56px] leading-tight">
+            <h1 className="font-normal md:text-[56px] text-xl leading-tight">
               Unlock the Future of Learning with GRADES NFT
             </h1>
             <Image

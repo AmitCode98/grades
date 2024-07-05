@@ -10,12 +10,12 @@ import Button from "../button";
 export default function NftCollection() {
   return (
     <section className="relative h-full w-full flex flex-col items-center">
-      <Image src={BlueGradientImg} alt="img" className="border border-black" />
+      <Image src={BlueGradientImg} alt="img" className="" />
 
-      <div className="bg-blue w-full pb-20 border border-black">
+      <div className="bg-blue w-full pb-20">
         <div className="container flex flex-col items-center text-center gap-10">
-          <p className="text-2xl font-normal w-[85%] text-black ">
-            The "Grades" NFT collection represents a pioneering initiative that
+          <p className="text-2xl font-normal w-[85%]">
+            The &quot;Grades&quot; NFT collection represents a pioneering initiative that
             combines the allure of digital collectibles with the profound impact
             of education, creating a unique ecosystem where learning and
             collecting merge into a singular, rewarding experience.

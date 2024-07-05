@@ -9,7 +9,7 @@ export default function Home() {
       <Hero />
       <AboutUs/>
       <NftCollection/>
-      <NftMarketplace/>
+      {/* <NftMarketplace/> */}
       
     </main>
   );

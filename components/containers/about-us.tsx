@@ -5,8 +5,8 @@ import Image from "next/image";
 
 export default function AboutUs() {
   return (
-    <section className="relative h-full w-full py-12 lg:py-16 border">
-      <div className="container border">
+    <section className="relative h-full w-full py-12 lg:py-16">
+      <div className="container">
         <Image
           src={AboutUsBgImg}
           alt="about us background image"

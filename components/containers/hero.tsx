@@ -42,7 +42,7 @@ export default function hero() {
           <p className="font-abeezee italic text-[#3C3C3C] mt-2">
             Welcome to GRADES NFT, where education and innovation converge. Our
             unique ecosystem allows kids to learn, earn, and collect NFTs as
-            they progress through their academic journey. Empower your child's
+            they progress through their academic journey. Empower your child&apos;s
             education with a system that rewards achievement and fosters a love
             for learning.
           </p>

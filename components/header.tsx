@@ -45,19 +45,19 @@ export default function Header() {
     >
       <nav className="container flex justify-between items-center">
         <Link href="/">
-          <Image src={CompanyLogo} alt="logo" className="w-48" />
+          <Image src={CompanyLogo} alt="logo" className="w-[110px] lg:w-48" />
         </Link>
         <ul className="flex uppercase gap-12 font-abeezee text-lg text-black">
           {navItems.map(({ label, path }) => (
             <li
               key={label}
-              className="hover:text-primary cursor-pointer hover:border-b hover:border-b-primary"
+              className="hidden lg:block hover:text-primary cursor-pointer hover:border-b hover:border-b-primary"
             >
               <Link href={path}>{label}</Link>
             </li>
           ))}
         </ul>
-        <div className="flex items-center gap-6 text-lg font-abeezee">
+        <div className="hidden lg:flex items-center gap-6 text-lg font-abeezee">
           <span className="cursor-pointer">Get Notified</span>
           <Button className="bg-background text-primary">Log in</Button>
         </div>

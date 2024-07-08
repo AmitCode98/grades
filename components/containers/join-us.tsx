@@ -20,9 +20,9 @@ export default function JoinUs() {
             <div className="flex flex-col gap-4">
               <h1 className="text-5xl capitalize">Secure your Grades</h1>
               <p className="text-lg font-abeezee">
-                Participants in the "Grades" NFT ecosystem are rewarded for
-                their achievements. These NFTs can be collected, traded, or used
-                to unlock additional benefits.
+                Participants in the &quot;Grades&quot; NFT ecosystem are
+                rewarded for their achievements. These NFTs can be collected,
+                traded, or used to unlock additional benefits.
               </p>
             </div>
             <Image src={NftReserveImg} alt="img" />

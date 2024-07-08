@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { bubblegum_sans, abeezee, mouse_memoirs } from "./fonts";
 import Header from "@/components/header";
+import Footer from "@/components/footer";
 
 export const metadata: Metadata = {
   title: "Grades",
@@ -19,8 +20,10 @@ export default function RootLayout({
       className={`${bubblegum_sans.variable} ${abeezee.variable} ${mouse_memoirs.variable}`}
     >
       <body>
-        <Header/>
-        {children}</body>
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

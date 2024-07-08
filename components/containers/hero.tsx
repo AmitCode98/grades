@@ -36,7 +36,7 @@ export default function hero() {
             />
           </div>
           <div className="relative w-full">
-            <h1 className="font-normal text-3xl lg:text-[56px] leading-tight w-full">
+            <h1 className="font-normal text-[32px] lg:text-[56px] leading-tight w-full">
               Unlock the Future of Learning with GRADES NFT
             </h1>
             <Image

@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function AboutUs() {
   return (
-    <section className="relative h-full w-full py-12 lg:py-16">
+    <section className="relative h-full w-full pt-12">
       <div className="container flex items-center justify-center">
         <Image
           src={AboutUsBgImg}

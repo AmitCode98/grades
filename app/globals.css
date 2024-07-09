@@ -37,3 +37,20 @@
     }
   }
 }
+
+/* Rotation animation */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Combine translation and rotation */
+.custom-rotate {
+  animation: spin infinite 20s linear; /* Adjust animation duration and timing function */
+  transform-origin: center;
+  transform: translate(-50%, 0) rotate(0deg); /* Initial transformation to center the image */
+}

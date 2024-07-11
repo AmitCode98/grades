@@ -15,11 +15,11 @@ const NftCard = ({ status, name, userName, price, available, image }:any) => {
   return (
     <div className="p-6 border border-black rounded-xl">
       <div className="relative flex flex-col items-center gap-4">
-        <Image src={PinIcon} alt="pin icon" className="absolute -top-[50px] w-[22px]" />
+        <Image src={PinIcon} alt="pin icon" className="absolute -top-[50px] w-[22px] z-50" />
         <div className="relative">
           <Image src={image} alt="NFT img" className="w-[242px] h-[270px] rounded-lg" />
           <div className="absolute top-2 left-2 px-3 py-2 rounded-full bg-background flex items-center justify-center gap-1">
-            <Image src={StatusIcon} alt="status icon" className="w-[17px]" />
+            <Image src={StatusIcon} alt="status icon" className="w-[17px]"/>
             <p className="text-[13px] font-abeezee text-black uppercase">
               {status}
             </p>

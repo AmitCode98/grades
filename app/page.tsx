@@ -12,7 +12,7 @@ export default function Home() {
       <RegisterMarquee/>
       <AboutUs/>
       <NftCollection/>
-      {/* <NftMarketplace/> */}
+      <NftMarketplace/>
       <JoinUs/>
       
     </main>

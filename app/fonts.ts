@@ -1,4 +1,4 @@
-import { Bubblegum_Sans, ABeeZee, Mouse_Memoirs } from "next/font/google";
+import { Bubblegum_Sans, ABeeZee, Mouse_Memoirs, Manrope } from "next/font/google";
 
 export const bubblegum_sans = Bubblegum_Sans({
   weight: "400",
@@ -18,4 +18,10 @@ export const mouse_memoirs = Mouse_Memoirs({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-mouse-memoirs",
+});
+
+export const manrope = Manrope({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-manrope",
 });

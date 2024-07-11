@@ -24,9 +24,10 @@ const config: Config = {
         muted: "var(--muted)",
       },
       fontFamily: {
-        bubblegum: ["var(--font-bubblegum-sans)"],
-        abeezee: ["var(--font-abeezee)"],
-        mousememoirs: ["var(--font-mouse-memoirs)"],
+        bubblegum: "var(--font-bubblegum-sans)",
+        abeezee: "var(--font-abeezee)",
+        mousememoirs: "var(--font-mouse-memoirs)",
+        manrope: "var(--font-manrope)",
       },
     },
   },

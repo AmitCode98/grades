@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { bubblegum_sans, abeezee, mouse_memoirs } from "./fonts";
+import { bubblegum_sans,abeezee,mouse_memoirs } from "./fonts";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 

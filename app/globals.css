@@ -18,7 +18,7 @@
     @apply scroll-smooth;
   }
   body {
-    @apply w-full min-h-screen flex flex-col bg-background text-black overflow-x-hidden;
+    @apply w-full min-h-screen flex flex-col bg-background text-black overflow-x-hidden font-bubblegum;
   }
   h1,
   h2,

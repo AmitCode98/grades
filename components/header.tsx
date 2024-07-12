@@ -5,6 +5,15 @@ import Image from "next/image";
 import CompanyLogo from "@/public/images/Grades-Logo.png";
 import Button from "./button";
 
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
+
 const navItems = [
   { label: "home", path: "/" },
   { label: "marketplace", path: "/marketplace" },
@@ -61,6 +70,40 @@ export default function Header() {
           <span className="cursor-pointer">Get Notified</span>
           <Button className="bg-background text-primary">Log in</Button>
         </div>
+
+        <Sheet>
+          <SheetTrigger>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="28"
+              height="21"
+              viewBox="0 0 28 21"
+              fill="none"
+              className="w-5 h-5"
+            >
+              <path
+                d="M0 21H28V17.5H0V21ZM0 12.25H28V8.75H0V12.25ZM0 0V3.5H28V0H0Z"
+                fill="#E63B51"
+              />
+            </svg>
+          </SheetTrigger>
+          <SheetContent className="flex flex-col gap-6">
+            <ul className="flex flex-col uppercase gap-6 font-abeezee text-black">
+              {navItems.map(({ label, path }) => (
+                <li
+                  key={label}
+                  className="hover:text-primary cursor-pointer hover:border-b hover:border-b-primary"
+                >
+                  <Link href={path}>{label}</Link>
+                </li>
+              ))}
+            </ul>
+            <div className="flex flex-col gap-6 text-lg font-abeezee">
+              <span className="cursor-pointer">Get Notified</span>
+              <Button className="bg-background text-primary">Log in</Button>
+            </div>
+          </SheetContent>
+        </Sheet>
       </nav>
     </header>
   );

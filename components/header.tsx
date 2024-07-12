@@ -72,7 +72,7 @@ export default function Header() {
         </div>
 
         <Sheet>
-          <SheetTrigger>
+          <SheetTrigger className="lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="28"
@@ -87,7 +87,7 @@ export default function Header() {
               />
             </svg>
           </SheetTrigger>
-          <SheetContent className="flex flex-col gap-6">
+          <SheetContent className="lg:hidden flex flex-col gap-6">
             <ul className="flex flex-col uppercase gap-6 font-abeezee text-black">
               {navItems.map(({ label, path }) => (
                 <li

@@ -38,8 +38,14 @@ const config: Config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        rotate: {
+          '0%': { transform: 'perspective(1000px) rotateY(0deg)'},
+          '100%': { transform: 'perspective(1000px) rotateY(360deg)'}
+        }
       },
+     
       animation: {
+        "rotate": 'rotate 30s linear infinite',
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },

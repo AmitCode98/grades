@@ -21,7 +21,11 @@
     "react-fast-marquee": "^1.6.5",
     "swiper": "^11.1.4",
     "tailwind-merge": "^2.3.0",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "date-fns": "^3.6.0",
+    "react-hot-toast": "^2.4.0",
+    "ethers": "^6.12.1",
+      "thirdweb": "^5.16.1"
   },
   "devDependencies": {
     "@types/node": "^20",

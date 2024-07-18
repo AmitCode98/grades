@@ -3,6 +3,7 @@ import "./globals.css";
 import { bubblegum_sans,abeezee,mouse_memoirs } from "./fonts";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import { ThirdwebProvider } from "thirdweb/react";
 
 export const metadata: Metadata = {
   title: "Grades",
@@ -20,9 +21,11 @@ export default function RootLayout({
       className={`${bubblegum_sans.variable} ${abeezee.variable} ${mouse_memoirs.variable}`}
     >
       <body>
+      <ThirdwebProvider>
         <Header />
         {children}
-        <Footer />
+          <Footer />
+          </ThirdwebProvider>
       </body>
     </html>
   );

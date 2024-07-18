@@ -3,14 +3,12 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import CompanyLogo from "@/public/images/Grades-Logo.png";
-import Button from "./button";
-
+import { ConnectButton, darkTheme } from "thirdweb/react";
+import { NETWORK } from "../const/contracts";
+import client from "../app/client";
 import {
   Sheet,
   SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
 
@@ -28,10 +26,8 @@ export default function Header() {
   const controlNavbar = () => {
     if (typeof window !== "undefined") {
       if (window.scrollY > lastScrollY) {
-        // If scrolling down
         setShowNavbar(false);
       } else {
-        // If scrolling up
         setShowNavbar(true);
       }
       setLastScrollY(window.scrollY);
@@ -46,6 +42,7 @@ export default function Header() {
       };
     }
   }, [lastScrollY]);
+
   return (
     <header
       className={`fixed w-full p-5 transition-transform duration-300 z-40 ${
@@ -67,8 +64,32 @@ export default function Header() {
           ))}
         </ul>
         <div className="hidden lg:flex items-center gap-6 text-lg font-abeezee">
-          <span className="cursor-pointer">Get Notified</span>
-          <Button className="bg-background text-primary">Log in</Button>
+          <ConnectButton
+            theme={darkTheme({
+              colors: {
+                primaryText: "#000",
+                separatorLine: "#2B333D",
+                primaryButtonBg: "#fff",
+                primaryButtonText: "#fff"
+              },
+              fontFamily: "Arial Black",
+            })}
+            client={client}
+            chain={NETWORK}
+            connectButton={{
+              label: "Log in",
+              style: {
+                height: "51px",
+                width: "200px",
+                borderRadius: "0.375rem",
+                border: "2px",
+                borderColor: "#0000",
+                fontSize: "1rem",
+                fontWeight: 700,
+                color: "#000",
+              },
+            }}
+          />
         </div>
 
         <Sheet>
@@ -99,8 +120,33 @@ export default function Header() {
               ))}
             </ul>
             <div className="flex flex-col gap-6 text-lg font-abeezee">
-              <span className="cursor-pointer">Get Notified</span>
-              <Button className="bg-background text-primary">Log in</Button>
+              <ConnectButton
+                theme={darkTheme({
+                  colors: {
+                    primaryText: "#E63B51",
+                    separatorLine: "#2B333D",
+                    primaryButtonBg: "#E63B51",
+                    primaryButtonText: "#000",
+                    connectedButtonBg: "#E63B51"
+                  },
+                  fontFamily: "Arial Black",
+                })}
+                client={client}
+                chain={NETWORK}
+                connectButton={{
+                  label: "Log in",
+                  style: {
+                    height: "51px",
+                    width: "200px",
+                    borderRadius: "0.375rem",
+                    border: "2px",
+                    borderColor: "#0000",
+                    fontSize: "1rem",
+                    fontWeight: 700,
+                    color: "#000",
+                  },
+                }}
+              />
             </div>
           </SheetContent>
         </Sheet>
@@ -108,6 +154,7 @@ export default function Header() {
     </header>
   );
 }
+
 
 // Hannan optimized header code
 

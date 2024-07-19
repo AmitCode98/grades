@@ -255,13 +255,22 @@ function NFTComponent({ nft, tokenId, owner }: NFTComponentProps) {
       </div>
       <div className={`relative w-full h-[308px] text-black flex justify-center items-center ${owner ? "bg-white" : "bg-[#E4E4E4]"
         }`}>
-        {nftData.metadata.image && (
-          <MediaRenderer
-            src={nftData.metadata.image}
-            client={client}
-            className="p-4 w-full h-full object-cover !rounded-none"
-          />
-        )}
+      {nft.metadata.image && (
+    <>
+      {/*
+      <MediaRenderer
+        src={nft.metadata.image}
+        client={client}
+        className="p-4 w-[347px] h-[308px] object-center rounded-md"
+      />
+      */}
+      <MediaRenderer
+        src="/marketplace/300.png" // This is a hardcoded image path
+        client={client}
+        className="p-4 w-[347px] h-[308px] object-center rounded-md"
+      />
+    </>
+  )}
       </div>
       <div className="flex items-center justify-between flex-1 w-full px-3">
         <div className="flex flex-col justify-center py-3">
